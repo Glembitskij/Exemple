@@ -22,5 +22,22 @@ namespace ConsoleAppl1Test
             // Assert
             Assert.AreEqual(expected, actyalresult);
         }
+
+        [TestMethod]
+        public void Minus10Minus15Retyrn5()
+        {
+            // Arrenge 
+            int a = 10;
+            int b = 5;
+            int expected = 5;
+            int actyalresult;
+            Calculator calculator = new Calculator();
+
+            // Act
+            actyalresult = calculator.Minus(a, b);
+
+            // Assert
+            Assert.AreEqual(expected, actyalresult);
+        }
     }
 }
