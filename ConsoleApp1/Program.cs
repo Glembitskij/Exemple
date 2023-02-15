@@ -13,6 +13,8 @@ namespace ConsoleApp1
             Calculator calculator = new Calculator();
             int res = calculator.Summing(10, 20);
 
+            int res2 = calculator.Minus(30, 20);
+
             Console.WriteLine(res);
         }
     }
@@ -22,6 +24,12 @@ namespace ConsoleApp1
         public int Summing(int x, int y)
         {
             int res = x + y;
+            return res;
+        }
+
+        public int Minus(int x, int y)
+        {
+            int res = x - y;
             return res;
         }
     }
